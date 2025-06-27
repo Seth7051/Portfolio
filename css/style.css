@@ -20,12 +20,6 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   box-sizing: inherit;
   font-family: inherit; }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
@@ -698,6 +692,26 @@ textarea {
     opacity: 1;
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite; }
+
+@media only screen and (max-width: 56.25em) {
+  .projects__row {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+    text-align: center;
+  }
+
+  .projects__row-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .projects__row-content {
+    align-items: center;
+    padding: 0 2rem;
+  }
+}
 
 @keyframes wheel {
   to {
