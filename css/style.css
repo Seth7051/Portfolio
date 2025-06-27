@@ -21,7 +21,8 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   font-family: inherit; }
 
 img {
-  style="border-radius: 8px;"
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 html {
