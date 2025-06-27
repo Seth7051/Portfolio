@@ -20,11 +20,6 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   box-sizing: inherit;
   font-family: inherit; }
 
-img {
-  border: 2px solid black;
-  border-radius: 5px;
-}
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
@@ -300,7 +295,9 @@ textarea {
   .projects__row-img {
     width: 100%;
     display: block;
-    object-fit: cover; }
+    object-fit: cover; 
+    border: 2px solid black;
+    border-radius: 5px;}
   .projects__row-content {
     padding: 2rem 0;
     display: flex;
